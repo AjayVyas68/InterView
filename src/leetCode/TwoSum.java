@@ -1,5 +1,7 @@
 package leetCode;
 
+import java.util.Arrays;
+
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         for (int i =0; i<nums.length;i++)
@@ -13,5 +15,11 @@ public class TwoSum {
             }
         }
         return nums;
+    }
+
+    public static void main(String[] args) {
+        int d[] = {1,2,6,8,7,5};
+        TwoSum t=new TwoSum();
+        System.out.printf(Arrays.toString(t.twoSum(d,4)));
     }
 }
